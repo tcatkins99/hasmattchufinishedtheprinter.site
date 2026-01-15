@@ -1,3 +1,16 @@
+// === SHUFFLE PERSON SECTIONS ===
+(function shufflePersonSections() {
+  const outergrid = document.querySelector('.outergrid');
+  if (!outergrid) return;
+  const sections = [...outergrid.querySelectorAll('section.person')];
+  // Fisher-Yates shuffle
+  for (let i = sections.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [sections[i], sections[j]] = [sections[j], sections[i]];
+  }
+  sections.forEach(section => outergrid.appendChild(section));
+})();
+
 // === EASTER EGGS ===
 
 // 1. Console ASCII Art
