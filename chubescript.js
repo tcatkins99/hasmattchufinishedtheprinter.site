@@ -92,7 +92,7 @@ document.querySelectorAll('.status').forEach(status => {
         lastClickedNo = status;
       }
       noClickCount++;
-      if (noClickCount >= 10) {
+      if (noClickCount >= 1) {
         const original = status.innerHTML;
         status.innerHTML = 'still no lmao';
         setTimeout(() => status.innerHTML = original, 2000);
@@ -231,7 +231,7 @@ if (chubeCard) {
   chubeCard.style.cursor = 'pointer';
   chubeCard.addEventListener('click', () => {
     chubeClicks++;
-    if (chubeClicks >= 5) {
+    if (chubeClicks >= 1) {
       // Sad trombone sound (base64 encoded short beep as fallback)
       const audio = new Audio('https://www.myinstants.com/media/sounds/sad-trombone.mp3');
       audio.volume = 0.3;
