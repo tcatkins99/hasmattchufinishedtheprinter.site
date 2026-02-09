@@ -38,7 +38,7 @@ function applyMode(mode) {
       font-size: 20px;
       text-align: center;
     `;
-    darknessOverlay.textContent = 'the darkness consumes all unfinished printers';
+    darknessOverlay.innerHTML = 'the darkness consumes all unfinished printers<br><img src="https://media.tenor.com/aDteIAX68QsAAAAM/burn-elmo.gif" alt="elmo in flames" style="margin-top:15px;max-width:200px;">';
     document.body.appendChild(darknessOverlay);
   }
 
